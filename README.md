@@ -2,7 +2,7 @@
 
 An unofficial Linux and Windows desktop app for [extra.email](https://extra.email), built with Pake/Tauri.
 
-> ⚠️ This is a community-maintained wrapper. It is not affiliated with or officially supported by Extra. If you are part of the Extra team and wish to have this repo taken down please open an issue.
+> ⚠️ This is a community-maintained wrapper. It is not affiliated with or officially supported by Extra. If you are part of the Extra team and wish to have this repo taken down please open an issue. It was only created because the developers havent made a desktop app yet.
 
 ---
 
