@@ -26,12 +26,11 @@ jobs:
           Start-Process -FilePath 'webview2.exe' -Args '/silent /install' -Wait
         shell: powershell
 
-      - name: Build EXE
+      - name: Build
         run: pake https://extra.email --name Extra --inject linux/inject-fix.js
 
-      - name: Upload to Release
-        uses: softprops/action-gh-release@v1
+      - name: Upload to Artifacts
+        uses: actions/upload-artifact@v4
         with:
-          files: "*.exe"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          name: Extra-Windows
+          path: "*.msi"
