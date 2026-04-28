@@ -27,7 +27,7 @@ jobs:
         shell: powershell
 
       - name: Build EXE
-        run: pake https://extra.email --name Extra --inject inject-fix.js
+        run: pake https://extra.email --name Extra --inject linux/inject-fix.js
 
       - name: Upload to Release
         uses: softprops/action-gh-release@v1
